@@ -10,11 +10,12 @@ namespace ConsoleUI
         {
             CarTest();
             BrandTest();
+            ColorTest();
 
         }
         private static void CarTest()
         {
-            CarManager carManager = new CarManager(new EfBrandDal());
+            CarManager carManager = new CarManager(new EfCarDal());
 
             foreach (var car in carManager.GetAll())
             {

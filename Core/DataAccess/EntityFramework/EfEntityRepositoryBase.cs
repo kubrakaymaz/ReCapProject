@@ -47,14 +47,6 @@ namespace Core.DataAccess.EntityFramework
                 return filter == null ? context.Set<TEntity>().ToList() : context.Set<TEntity>().Where(filter).ToList();
             }
         }
-        public List<CarDetailDto> GetCarDetails()
-        {
-            using(DatabaseContext context=new DatabaseContext())
-            {
-
-            }
-
-        }
 
         public void Update(TEntity entity)
         {
